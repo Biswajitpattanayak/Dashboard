@@ -1,0 +1,74 @@
+.dashboard-content {
+    padding: 20px;
+  }
+  
+  .stat-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .chart-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pie-chart {
+    height: 275px;
+    margin: auto;
+  }
+  
+  .stacked-bar {
+    height: 400px; /* Keep the height for Financial Overview */
+  }
+  
+  .right-sidebar {
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .chart-box {
+      margin-top: 10px;
+    }
+  
+    .stacked-bar {
+      height: 350px;
+    }
+  }
+
+  .stat-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .stat-box.bg-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+    transform: scale(1.05); /* Slight scaling */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-box.bg-info:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-box.bg-warning:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-box.bg-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  

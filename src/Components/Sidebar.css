@@ -1,0 +1,86 @@
+/* Sidebar styling */
+.sidebar {
+    background-color: #1a1a1a; /* Black background */
+    color: #fff; /* White text color */
+    height: 100vh;
+    width: 300px; /* Sidebar width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* User profile section */
+  .sidebar .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .sidebar .user img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular image */
+    border: 3px solid #ffae00; /* Accent border for uniqueness */
+    margin-bottom: 10px;
+  }
+  
+  .sidebar .user h3 {
+    color: #ffae00; /* Highlighted username color */
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar .user h3:hover {
+    color: #fff; /* Hover effect for the username */
+  }
+  
+  /* Sidebar menu styling */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar ul li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #333; /* Hover effect */
+    padding-left: 20px; /* Subtle padding increase on hover */
+  }
+  
+  .sidebar ul li svg {
+    margin-right: 10px;
+    color: #ffae00; /* Icon color */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .sidebar ul li {
+      font-size: 1em;
+      padding: 12px;
+    }
+  
+    .sidebar .user img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
